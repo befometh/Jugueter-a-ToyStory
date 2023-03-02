@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio - ToyStory Playroom Store</title>
+
+    <!-- Bootstrap 5.0 (Fuentes: https://getbootstrap.com/) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Fuentes de texto (Fuente: https://fonts.google.com) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gajraj+One&family=Labrada:wght@500&family=Shantell+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Hoja de estilo principal -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Cabecera de la página, descuentos principales y alertas para el usuario -->
+    <header>
+      <!-- Promoción del día -->
+      <div class="row">
+        <div class="col text-md-center bg-danger">
+          <h3 class="text-light">Solo por hoy. 30% de descuento</h3>
+          <p class="text-warning">En cualquiera de nuestros nuevos productos</p>
+        </div>
+      </div>
+      <!-- Logo de la compañía -->
+      <div class="row">
+        <div class="col-md-6">
+          <div class="col-10 m-auto">
+            <img
+              id="logo"
+              class="img-thumbnail float-start m-1"
+              src="./img/logo.png"
+              alt="Logo"
+            />
+            <div class="float-start">
+              <h1 class="title1 text-info">ToyStory Playroom Store</h1>
+              <p class="title2 text-xxl-center">Sinfonía de diversión</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="col-10 m-auto">
+            <label class="form-label title2" for="langList"
+              >Seleccione el Lenguaje</label
+            >
+            <select class="form-select w-50" name="langList" id="langList">
+              <option value="es">Español</option>
+              <option value="en">English</option>
+              <option value="ita">Italiano</option>
+              <option value="fr">Français</option>
+              <option value="ru">Russian</option>
+              <option value="de">Deutch</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Fin de Cabecera -->
+
+    <!-- Cuerpo de la página -->
+    <main>
+      <header class="headerMain">
+        <!-- Inicio del Carrusel Principal-->
+        <div class="row">
+          <div class="col-12">
+            <div
+              id="carouselExampleCaptions"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="3"
+                  aria-label="Slide 4"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="4"
+                  aria-label="Slide 5"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./img/c1.jpg"
+                    class="d-block w-100"
+                    alt="Muñeco de Nieve"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>¡Es navidad!</h5>
+                    <p>Disfruta de nuestras rebajas de invierno</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/c2.jpg" class="d-block w-100" alt="..." />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>¡Nuevas sorpresas!</h5>
+                    <p>Encuentra todo lo que buscas a precios muy bajos</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/c3.jpg"
+                    class="d-block w-100"
+                    alt="Figuras de Bayron Man"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Impresiona</h5>
+                    <p>
+                      Entregamos a contrarreloj, si tienes una tienda cerca, lo
+                      tendrás en tu puerta
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/c4.jpg"
+                    class="d-block w-100"
+                    alt="Niña armando una torre de cubos"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Divertidos y educativos</h5>
+                    <p>
+                      Saca partido a los juguetes para que tus niños aprendan,
+                      fomenta su curiosidad y sus ganas de aprender
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/c5.png"
+                    class="d-block w-100"
+                    alt="Mando de videojuegos"
+                  />
+                  <div class="carousel-caption d-none d-md-block text-dark">
+                    <h5>Zona Gaming</h5>
+                    <p>
+                      Todo en rebajas, todas las consolas, todos los precios
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fin del Carrusel -->
+      </header>
+      <!-- Fin Cabecera -->
+
+      <!-- Barra de navegación -->
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-secondary bg-gradient"
+      >
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item btn-outline-danger">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item btn-outline-danger">
+                <a class="nav-link" href="#">Últimas Ofertas</a>
+              </li>
+              <li class="nav-item btn-outline-danger dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categorías
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Bebés</a></li>
+                  <li><a class="dropdown-item" href="#">Niños</a></li>
+                  <li><a class="dropdown-item" href="#">Adolescentes</a></li>
+                  <li><a class="dropdown-item" href="#">Adultos</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item ps-5" href="#"
+                      >Sección prohibida (+18)...</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item btn-outline-danger">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+            </ul>
+            <!-- Buscador -->
+            <form class="d-flex">
+              <input
+                class="form-control me-2 w-auto"
+                type="search"
+                placeholder=""
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-light" type="submit">
+                Buscar
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- Fin Nav -->
+
+      <!-- Sección 1: Últimas Ofertas -->
+      <section class="offers">
+        <div class="row">
+          <div class="col-12 align-items-center mt-3">
+            <h2 class="h2 text-center title2 bg-info bg-gradient">
+              Lo más buscado hoy
+            </h2>
+          </div>
+          <div class="col-md-4 align-items-center m-auto">
+            <div
+              id="carouselExampleControls"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner align-items-center">
+                <div class="carousel-item active">
+                  <img
+                    src="./img/c2-1.jpg"
+                    class="d-block w-100 rounded"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/c2-2.jpg"
+                    class="d-block w-100 rounded"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/c2-3.jpg"
+                    class="d-block w-100 rounded"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/c2-4.jpg"
+                    class="d-block w-100 rounded"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Fin de Sección 1 -->
+
+      <div class="col-md-10 m-auto">
+        <hr class="separador" />
+      </div>
+
+      <!-- Sección 2: Catálogo -->
+      <!-- Fila 1 -->
+      <div
+        class="row justify-content-center align-items-center g-2 pt-5 col-md-9 cardContainer"
+      >
+        <!-- Artículo 1 -->
+        <div class="col">
+          <article>
+            <div class="card m-auto" style="width: 18rem">
+              <img
+                src="./img/product1.jpg"
+                class="card-img-top"
+                alt="bicicleta"
+              />
+              <div class="card-body">
+                <h5 class="card-title title2">Bicicleta de montaña "Yvoló"</h5>
+                <p class="card-text">
+                  <span class="beforePrice">Antes X.00€</span> Ahora X.00€
+                </p>
+              </div>
+              <div class="card-body">
+                <a href="#" class="card-link title1">Comprar Ahora</a>
+                <a href="#" class="card-link title1">Similares...</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <!-- Artículo 2 -->
+        <div class="col">
+          <article>
+            <div class="card m-auto" style="width: 18rem">
+              <img src="./img/product2.png" class="card-img-top" alt="patin" />
+              <div class="card-body">
+                <h5 class="card-title title2">Patines en Linea "Malbohro"</h5>
+                <span class="beforePrice">Antes X.00€</span> Ahora X.00€
+              </div>
+              <div class="card-body">
+                <a href="#" class="card-link title1">Comprar Ahora</a>
+                <a href="#" class="card-link title1">Similares...</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <!-- Artículo 3 -->
+        <div class="col">
+          <article>
+            <div class="card m-auto" style="width: 18rem">
+              <img
+                src="./img/product3.png"
+                class="card-img-top"
+                alt="superheroe"
+              />
+              <div class="card-body">
+                <h5 class="card-title title2">Fighting Man</h5>
+                <span class="beforePrice">Antes X.00€</span> Ahora X.00€
+              </div>
+              <div class="card-body">
+                <a href="#" class="card-link title1">Comprar Ahora</a>
+                <a href="#" class="card-link title1">Similares...</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <!-- Artículo 4 -->
+        <div class="col">
+          <article>
+            <div class="card m-auto" style="width: 18rem">
+              <img
+                src="./img/product4.jpg"
+                class="card-img-top"
+                alt="tren de bloques"
+              />
+              <div class="card-body">
+                <h5 class="card-title title2">
+                  Trenecito "Que se descarrila mi nene"
+                </h5>
+                <p class="card-text">
+                  <span class="beforePrice">Antes X.00€</span> Ahora X.00€
+                </p>
+              </div>
+              <div class="card-body">
+                <a href="#" class="card-link title1">Comprar Ahora</a>
+                <a href="#" class="card-link title1">Similares...</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <!-- Fin Fila 1 -->
+      <!-- Fila 2 -->
+      <div
+        class="row justify-content-center align-items-center g-2 pt-5 col-md-9 cardContainer"
+      >
+        <!-- Artículo 5 -->
+        <div class="col">
+          <article>
+            <div class="card m-auto" style="width: 18rem">
+              <img src="./img/product5.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title title2">Osito "Estranguladitas"</h5>
+                <span class="beforePrice">Antes X.00€</span> Ahora X.00€
+              </div>
+              <div class="card-body">
+                <a href="#" class="card-link title1">Comprar Ahora</a>
+                <a href="#" class="card-link title1">Similares...</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <!-- Artículo 6 -->
+        <div class="col">
+          <article>
+            <div class="card m-auto" style="width: 18rem">
+              <img src="./img/product6.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title title2">Coche a control remoto "Soy mejor que papá"</h5>
+                <span class="beforePrice">Antes X.00€</span> Ahora X.00€
+              </div>
+              <div class="card-body">
+                <a href="#" class="card-link title1">Comprar Ahora</a>
+                <a href="#" class="card-link title1">Similares...</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <!-- Artículo 7 -->
+        <div class="col">
+          <article>
+            <div class="card m-auto" style="width: 18rem">
+              <img src="./img/product8.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title title2">Pelota "Space Crash"</h5>
+                <span class="beforePrice">Antes X.00€</span> Ahora X.00€
+              </div>
+              <div class="card-body">
+                <a href="#" class="card-link title1">Comprar Ahora</a>
+                <a href="#" class="card-link title1">Similares...</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <!-- Artículo 8 -->
+        <div class="col">
+          <article>
+            <div class="card m-auto" style="width: 18rem">
+              <img src="./img/product7.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title title2">Cubo rubik "Magnom"</h5>
+                <span class="beforePrice">Antes X.00€</span> Ahora X.00€
+              </div>
+              <div class="card-body">
+                <a href="#" class="card-link title1">Comprar Ahora</a>
+                <a href="#" class="card-link title1">Similares...</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+      <!-- Fin Fila 2 -->
+      <!-- Fin de la Sección 2 -->
+    </main>
+    <!-- Fin del cuerpo -->
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Fin Bootstrap JS -->
+  </body>
+</html>
+
+<!-- Imagen de los Iron Man: https://pixabay.com/es/photos/hombre-de-hierro-super-hero-juguetes-933709/ -->
